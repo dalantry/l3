@@ -42,10 +42,12 @@ function textChoice(number){
     rusText.textContent = textArray[number].rus;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function onLoad(number){
     textChoice(number);
     smileChoice(number);
-});
+}
+
+document.addEventListener("DOMContentLoaded", onLoad(numberArray));
 
 let timerId = setInterval(() => {
     var numberArrayInterval = randomInteger(0, 2);
