@@ -115,24 +115,29 @@ body{
     0% {
         top: 0%;
         left: 0%;
+        transform: rotate(72deg);
     }
 
     25%{
         top: 90%;
         left: 90%;
+        transform: rotate(144deg);
     }
 
     50%{
         top: 0%;
         left: 70%;
+        transform: rotate(216deg);
     }
 
     75%{
         top: 70%;
         left: 90%;
+        transform: rotate(288deg);
     }
     100%{
         top: 0%;
         left: 10%;
+        transform: rotate(360deg);
     }
 }
