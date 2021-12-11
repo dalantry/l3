@@ -73,6 +73,14 @@ body{
 @media  (max-width: 769px){
     .title-md{
         margin-right: 0;
+        font-size: 60px;
+    }
+    .text{
+        font-size: 30px;
+    }
+
+    .title{
+        font-size: 100px;
     }
 }
 
