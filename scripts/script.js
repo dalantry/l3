@@ -54,3 +54,11 @@ let timerId = setInterval(() => {
     smileChoice(numberArrayInterval);
     textChoice(numberArrayInterval);
 }, 1000);
+
+
+setTimeout(flyBurger, 5000); 
+
+function flyBurger(){
+    var burger = document.querySelector('.burger');
+    burger.classList.add('burger_active');
+}
