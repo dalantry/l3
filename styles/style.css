@@ -1,6 +1,9 @@
 @import url(../fonts/roboto/stylesheet.css);
 
-
+body{
+    margin: 0;
+    padding: 0;
+}
 
 .bg{
   animation: gradient 10s linear infinite;
