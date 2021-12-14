@@ -1,8 +1,8 @@
-var smileArray = [
-    '-_-',
-    '^-^',
-    'o_O',
-]
+// var smileArray = [
+//     '-_-',
+//     '^-^',
+//     'o_O',
+// ]
 
 var textArray = [
     {
@@ -27,19 +27,19 @@ function randomInteger(min, max) {
     return number;
 }
 
-var numberArray = randomInteger(0, 2);
+var numberArray = randomInteger(0, 96);
 
 function smileChoice (number){
     var smile = document.querySelector('.title');
-    smile.textContent = smileArray[number];
+    smile.textContent = smiles[number]['117'];
 }
 
 function textChoice(number){
     var foreignText = document.querySelector('.title-md');
-    foreignText.textContent = textArray[number].foreign;
+    foreignText.textContent = words[number]['97'];
 
     var rusText = document.querySelector('.text');
-    rusText.textContent = textArray[number].rus;
+    rusText.textContent = `любить по-${words[number]['97__1']}`;
 }
 
 function onLoad(number){
@@ -50,15 +50,15 @@ function onLoad(number){
 document.addEventListener("DOMContentLoaded", onLoad(numberArray));
 
 let timerId = setInterval(() => {
-    var numberArrayInterval = randomInteger(0, 2);
+    var numberArrayInterval = randomInteger(0, 96);
     smileChoice(numberArrayInterval);
     textChoice(numberArrayInterval);
-}, 1000);
+}, 2000);
 
 
-setTimeout(flyBurger, 5000); 
+// setTimeout(flyBurger, 5000); 
 
-function flyBurger(){
-    var burger = document.querySelector('.burger');
-    burger.classList.add('burger_active');
-}
+// function flyBurger(){
+//     var burger = document.querySelector('.burger');
+//     burger.classList.add('burger_active');
+// }
