@@ -1,25 +1,3 @@
-// var smileArray = [
-//     '-_-',
-//     '^-^',
-//     'o_O',
-// ]
-
-var textArray = [
-    {
-        foreign: 'love',
-        rus: 'любить по английски',
-    },
-    {
-        foreign: 'dashuri',
-        rus: 'любить по албански',
-    },
-    {
-        foreign: 'любить',
-        rus: 'любить по русски',
-    }
-]
-
-
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     var number = Math.floor(rand);
@@ -27,7 +5,6 @@ function randomInteger(min, max) {
     return number;
 }
 
-var numberArray = randomInteger(0, 96);
 
 function smileChoice (number){
     var smile = document.querySelector('.title');
@@ -42,12 +19,13 @@ function textChoice(number){
     rusText.textContent = `любить по-${words[number]['97__1']}`;
 }
 
-function onLoad(number){
-    textChoice(number);
-    smileChoice(number);
+function onLoad(){
+    var numberArray = randomInteger(0, 96);
+    textChoice(numberArray);
+    smileChoice(numberArray);
 }
 
-document.addEventListener("DOMContentLoaded", onLoad(numberArray));
+document.addEventListener("DOMContentLoaded", onLoad());
 
 let timerId = setInterval(() => {
     var numberArrayInterval = randomInteger(0, 96);
