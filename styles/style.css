@@ -63,13 +63,17 @@ body{
     
 
 .title{
-    font-size: 56px;
+    font-size: 48px;
     font-family: 'roboto';
+    width: 400px;
+    text-align: left;
 }
 .title-md{
-    font-size: 56px;
-    margin-right: 40px;
+    font-size: 48px;
+    margin-right: 26px;
     font-family: 'roboto';
+    width: 400px;
+    text-align: right;
 }
 
 @media  (max-width: 769px){
@@ -87,10 +91,12 @@ body{
 }
 
 .text{
-    font-size: 22px;
+    font-size: 18px;
     font-family: 'roboto';
     font-weight: 300;
     margin-top: 5px;
+    width: 826px;
+    text-align: center;
 }
 
 .overlay{
@@ -151,4 +157,28 @@ body{
         left: 10%;
         transform: rotate(360deg);
     }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+}
+
+.animation-on {
+opacity: 0;
+transition: all 2s ease-in-out;
+}
+.animation-off{
+    opacity: 1;
+    transition: all 2s ease-in-out;
 }
