@@ -30,7 +30,7 @@ let timerId = setInterval(() => {
   var numberArrayInterval = randomInteger(0, 96);
   smileChoice(numberArrayInterval);
   textChoice(numberArrayInterval);
-}, 4000);
+}, 6000);
 
 let fadeInOut = setInterval(() => {
   var foreignText = document.querySelector(".title-md");
@@ -43,7 +43,7 @@ let fadeInOut = setInterval(() => {
   rusText.classList.toggle("animation-off");
   smile.classList.toggle("animation-on");
   smile.classList.toggle("animation-off");
-}, 2000);
+}, 3000);
 
 // setTimeout(flyBurger, 5000);
 
