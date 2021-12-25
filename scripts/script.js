@@ -14,8 +14,11 @@ function textChoice(number) {
   var foreignText = document.querySelector(".title-md");
   foreignText.textContent = words[number]["97"];
 
-  var rusText = document.querySelector(".text");
-  rusText.textContent = `любить по-${words[number]["97__1"]}`;
+  // var rusText = document.querySelector(".text");
+  // rusText.textContent = `любить по-${words[number]["97__1"]}`;
+
+  var rusText = document.querySelector(".text-second");
+  rusText.textContent = words[number]["97__1"];
 }
 
 function onLoad() {
@@ -36,6 +39,7 @@ let fadeInOut = setInterval(() => {
   var foreignText = document.querySelector(".title-md");
   var rusText = document.querySelector(".text");
   var smile = document.querySelector(".title");
+  var rusTextSecond = document.querySelector(".text-second");
 
   foreignText.classList.toggle("animation-on");
   foreignText.classList.toggle("animation-off");
@@ -43,7 +47,10 @@ let fadeInOut = setInterval(() => {
   rusText.classList.toggle("animation-off");
   smile.classList.toggle("animation-on");
   smile.classList.toggle("animation-off");
+  rusTextSecond.classList.toggle("animation-on");
+  rusTextSecond.classList.toggle("animation-off");
 }, 3000);
+
 
 // setTimeout(flyBurger, 5000);
 

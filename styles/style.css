@@ -57,6 +57,10 @@ body{
     display: flex;
     align-items: flex-end;
 }
+
+.bottom-container{
+    display: flex;
+}
  
 
 .title{
@@ -64,10 +68,11 @@ body{
     font-family: 'Amatic SC';
     width: 400px;
     text-align: left;
+    margin-left: 17px;
 }
 .title-md{
     font-size: 48px;
-    margin-right: 34px;
+    margin-right: 17px;
     font-family: 'Amatic SC';
     width: 400px;
     text-align: right;
@@ -78,8 +83,9 @@ body{
     font-family: 'Amatic SC';
     font-weight: 300;
     margin-top: 5px;
-    width: 826px;
     text-align: center;
+    width: 79px;
+    text-align: left;
 }
 
 @media  (max-width: 769px){
@@ -184,9 +190,9 @@ body{
 
 .animation-on {
 opacity: 0;
-transition: opacity 3s ease-in-out;
+transition: opacity 2s ease-in-out;
 }
 .animation-off{
     opacity: 1;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 2s ease-in-out;
 }
