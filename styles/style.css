@@ -66,6 +66,7 @@ body{
 .title{
     font-size: 56px;
     font-family: 'Amatic SC';
+    font-weight: 600;
     width: 400px;
     text-align: left;
     margin-left: 17px;
@@ -73,6 +74,7 @@ body{
 .title-md{
     font-size: 48px;
     margin-right: 17px;
+    font-weight: 600;
     font-family: 'Amatic SC';
     width: 400px;
     text-align: right;
